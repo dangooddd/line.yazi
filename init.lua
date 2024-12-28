@@ -1,10 +1,10 @@
 local function setup(_, options)
-    local separators = config.separators or { 
+    local separators = options.separators or { 
         left = "", 
         right = "" 
     }
 
-    local mode = config.mode or {
+    local mode = options.mode or {
         normal = "NORMAL",
         select = "SELECT",
         unset = "UNSET",

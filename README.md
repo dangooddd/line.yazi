@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center">
-    Simple statusline plugin for <a href="https://github.com/sxyazi/yazi">Yazi</a>
+    Line - simple statusline plugin for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
 ## 👀 Preview
