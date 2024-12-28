@@ -33,7 +33,7 @@ require("line"):setup({
         select = "SELECT",
         unset = "UNSET"
     },
-    -- separators between sections
+    -- lualine style separators between sections
     separators = {
         left = "",
         right = ""

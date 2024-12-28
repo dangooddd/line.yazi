@@ -1,14 +1,19 @@
 local function setup(_, options)
-    local separators = options.separators or { 
-        left = "", 
-        right = "" 
+    local default_options = {
+        separators = {
+            left = "", 
+            right = "",
+        },
+        mode = {
+            normal = "NORMAL",
+            select = "SELECT",
+            unset = "UNSET",
+        },
     }
 
-    local mode = options.mode or {
-        normal = "NORMAL",
-        select = "SELECT",
-        unset = "UNSET",
-    }
+    options = options or default_options
+    local separators = options.separators or default_options.separators 
+    local mode = options.mode or default_options.mode
 
     function Status:mode()
         local name = mode.normal
