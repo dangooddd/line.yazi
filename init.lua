@@ -42,9 +42,7 @@ local function setup(_, options)
 
     function Status:name()
         local hovered = cx.active.current.hovered
-        if not hovered then
-            return ui.Span("")
-        end
+        if not hovered then return ui.Span("") end
 
         local linked = ""
         if hovered.link_to ~= nil then
