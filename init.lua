@@ -36,7 +36,7 @@ local function setup(_, options)
     function Status:size()
         local alt = self:style().alt
         local hovered = cx.active.current.hovered
-        if not hovered then return ui.Line({}) end
+        if not hovered then return ui.Span(separators.left):fg(alt.bg) end
 
         local size = ya.readable_size(hovered:size() or hovered.cha.len)
         return ui.Line({
