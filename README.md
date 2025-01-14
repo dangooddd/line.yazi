@@ -29,7 +29,7 @@ Configuration options:
 require("line"):setup({
     -- mode names to display in statusline
     mode = {
-        main = "NORMAL",
+        normal = "NORMAL",
         select = "SELECT",
         unset = "UNSET"
     },
