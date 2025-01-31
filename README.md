@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center">
-    Line - simple statusline plugin for <a href="https://github.com/sxyazi/yazi">Yazi</a>
+    Line - simple lualine-like plugin for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
 ## 👀 Preview
@@ -24,7 +24,12 @@ Add these lines to your `init.lua` configuration file to use it:
 require("line"):setup()
 ```
 
+This plugin was created to provide lualine-like style of separators
+(one separator for left side of statusline, one for right side), so
+configuration is dead simple.
+
 Configuration options:
+
 ```lua
 require("line"):setup({
     -- mode names to display in statusline
